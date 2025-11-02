@@ -93,8 +93,8 @@ galleryList.addEventListener("click", (e) => {
   const largeImage = e.target.dataset.source;
   const description = e.target.alt;
 
-  const modal = basicLightbox.create(`
+  const instance = basicLightbox.create(`
     <img src="${largeImage}" alt="${description}" width="800" height="600">
   `);
-  modal.show();
+  instance.show();
 });
